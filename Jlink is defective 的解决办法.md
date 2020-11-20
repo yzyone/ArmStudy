@@ -1,10 +1,11 @@
-新版MDK提示the connected jlink is defective 的解决办法
+
+# 新版MDK提示the connected jlink is defective 的解决办法 #
 
 在使用新版MDK调试arm芯片时候，市场上常见的jlink v8会被检测到是克隆版
 并弹出the connected jlink is defective 错误。网上一般是用4.9的dll替换最新的驱动，这种方法我在5.26中测试已经失效，由于版本跨度太大而出现
 flash download algorithm 找不到的兼容性问题。
 
-另外一个方法是使用出场固件刷jlink，这样对于介于4.9和5.24a之间的MDK管用，再新版比如我用的5.26就又失效了，依旧能被检测到。
+另外一个方法是使用出厂固件刷jlink，这样对于介于4.9和5.24a之间的MDK管用，再新版比如我用的5.26就又失效了，依旧能被检测到。
 
 所以如果想用最新的MDK的话比如5.26，我经过尝试，将两种方法发融合找到新的解决办法并且亲测可用。
 
@@ -20,6 +21,6 @@ https://shuspieler.com/blog/1242/
 
 更新：
 
-我将所需的固件上传到Github，需要用到的同学可以到这里下载：https://github.com/shuspieler/DIY-RTOS-Learning-tinyOS-/tree/master/Jlink-Fix
+我将所需的固件上传到Github，需要用到的同学可以到这里下载：[https://github.com/shuspieler/DIY-RTOS-Learning-tinyOS-/tree/master/Jlink-Fix](https://github.com/shuspieler/DIY-RTOS-Learning-tinyOS-/tree/master/Jlink-Fix)
 
 读到这里的朋友，记得github给我点一个星星呀，感激不尽。
